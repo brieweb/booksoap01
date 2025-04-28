@@ -27,5 +27,12 @@ public class TeamClient {
                 System.out.println("  Name: " + player.getName() );
             }
         }
+        System.out.println("Single team");
+        Team team0;
+        team0 = port.getTeam("Marx Brothers");
+        for (Player player : team0.getPlayers()) {
+                System.out.println("  Player: " + player.getNickname());
+                //System.out.println("  Name: " + player.getName() );
+            }
     }
 }
